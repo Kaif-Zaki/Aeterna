@@ -213,8 +213,12 @@ const ContactPage = () => {
       <div className="pt-28 pb-16">
         <section className="container-luxury">
           <AnimatedSection>
-            <h1 className="font-display text-4xl md:text-7xl tracking-[0.1em] uppercase mb-4">Contact</h1>
-            <p className="text-muted-foreground text-sm tracking-wider mb-16">We'd love to hear from you</p>
+            <h1 className="font-display text-4xl md:text-7xl tracking-[0.1em] uppercase mb-4">
+              Contact
+            </h1>
+            <p className="text-muted-foreground text-sm tracking-wider mb-16">
+              We'd love to hear from you
+            </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -222,34 +226,56 @@ const ContactPage = () => {
             <AnimatedSection>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-2">Name</label>
+                  <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-2">
+                    Name
+                  </label>
                   <input
                     type="text"
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     className="w-full bg-transparent border-b border-border py-3 text-foreground focus:border-accent outline-none transition-colors"
                   />
-                  {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
+                  {errors.name && (
+                    <p className="text-destructive text-xs mt-1">
+                      {errors.name}
+                    </p>
+                  )}
                 </div>
                 <div>
-                  <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-2">Email</label>
+                  <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-2">
+                    Email
+                  </label>
                   <input
                     type="email"
                     value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, email: e.target.value })
+                    }
                     className="w-full bg-transparent border-b border-border py-3 text-foreground focus:border-accent outline-none transition-colors"
                   />
-                  {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
+                  {errors.email && (
+                    <p className="text-destructive text-xs mt-1">
+                      {errors.email}
+                    </p>
+                  )}
                 </div>
                 <div>
-                  <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-2">Message</label>
+                  <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-2">
+                    Message
+                  </label>
                   <textarea
                     value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, message: e.target.value })
+                    }
                     rows={5}
                     className="w-full bg-transparent border-b border-border py-3 text-foreground focus:border-accent outline-none transition-colors resize-none"
                   />
-                  {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
+                  {errors.message && (
+                    <p className="text-destructive text-xs mt-1">
+                      {errors.message}
+                    </p>
+                  )}
                 </div>
                 <button
                   type="submit"
@@ -266,31 +292,51 @@ const ContactPage = () => {
             <AnimatedSection delay={0.2}>
               <div className="space-y-10">
                 <div>
-                  <h3 className="font-display text-xl tracking-wider mb-3">Visit Us</h3>
+                  <h3 className="font-display text-xl tracking-wider mb-3">
+                    Visit Us
+                  </h3>
                   <div className="flex items-start gap-3 text-muted-foreground">
                     <MapPin size={18} className="mt-0.5 shrink-0" />
                     <p className="text-sm leading-relaxed">
-                      42 Via della Moda<br />
+                      42 Via della Moda
+                      <br />
                       Milan, Italy 20121
                     </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-display text-xl tracking-wider mb-3">Email</h3>
+                  <h3 className="font-display text-xl tracking-wider mb-3">
+                    Email
+                  </h3>
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <Mail size={18} />
-                    <a href="mailto:hello@aeterna.com" className="text-sm hover:text-accent transition-colors">
+                    <a
+                      href="mailto:hello@aeterna.com"
+                      className="text-sm hover:text-accent transition-colors"
+                    >
                       hello@aeterna.com
                     </a>
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-display text-xl tracking-wider mb-3">Follow</h3>
+                  <h3 className="font-display text-xl tracking-wider mb-3">
+                    Follow
+                  </h3>
                   <div className="flex gap-4">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                    >
                       <Instagram size={20} />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                    >
                       <Twitter size={20} />
                     </a>
                   </div>
@@ -299,7 +345,8 @@ const ContactPage = () => {
                 {/* Map embed */}
                 <div className="mt-8">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.1!2d9.19!3d45.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI4JzEyLjAiTiA5wrAxMScyNC4wIkU!5e0!3m2!1sen!2sit!4v1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.6!2d79.8211!3d6.9271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1
+"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
