@@ -2,7 +2,7 @@
 
 > A full-stack luxury fashion brand web application built with React, Node.js, Express, and MySQL.
 
-![Aeterna Banner](./aeterna-frontend/public/Aeterna2.png)
+![Aeterna Banner](./aeterna-frontend/src/assets/banner.png)
 
 ---
 
