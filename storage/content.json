@@ -1,0 +1,24 @@
+{
+    "about": {
+        "hero_title": "Our Stor",
+        "hero_text": "Aeterna was born from a belief that fashion should transcend seasons. We craft pieces that feel as relevant tomorrow as they do today — garments that age with grace.",
+        "mission_title": "Mission & Vision",
+        "mission_text_1": "Our mission is to create clothing that respects both the wearer and the world. We source the finest sustainable materials and collaborate with master artisans who share our dedication to craft.",
+        "mission_text_2": "We envision a future where fashion is conscious, purposeful, and enduring — where every thread carries meaning.",
+        "founder_role": "Founder & Creative Director",
+        "founder_name": "Aria Laurent",
+        "founder_bio": "With over a decade in luxury fashion, Aria founded Aeterna to bridge the gap between timeless craftsmanship and contemporary design. Her philosophy centers on intentionality — every seam, every silhouette is a deliberate choice."
+    },
+    "contact": {
+        "heading": "Contact",
+        "subtitle": "We'd love to hear from you",
+        "visit_title": "Visit Us",
+        "visit_address": "42 Via della Moda\r\nMilan, Italy 20121",
+        "email_title": "Email",
+        "email": "admin@aeterna.com",
+        "follow_title": "Follow",
+        "instagram_url": "https:\/\/instagram.com",
+        "twitter_url": "https:\/\/twitter.com",
+        "map_embed": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d126743.63244604084!2d79.8211869!3d6.927079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d1f8ebf75%3A0x4f13d0b6c6d25ea8!2sColombo!5e0!3m2!1sen!2slk!4v1713600000000"
+    }
+}
